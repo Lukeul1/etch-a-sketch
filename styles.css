@@ -1,0 +1,11 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-gap: 5px;
+}
+
+.grid-cell {
+    width: 100%;
+    padding-top:100%;
+    background-color: gray;
+}
