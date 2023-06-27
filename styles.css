@@ -1,11 +1,22 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    grid-gap: 5px;
-}
+    grid-gap: 1px; /* Adjust the gap between grid cells */
+    max-width: 960px;
+    margin: 0 auto;
+  }
 
 .grid-cell {
     width: 100%;
-    padding-top:100%;
-    background-color: gray;
-}
+    padding-top: 100%; /* Maintain a square shape */
+    background-color: white; /* Initial color of grid cells */
+    transition: background-color 0.2s; /* Transition effect */
+  }
+
+.grid-cell.hovered {
+    background-color: black; /* Color of grid cells on hover */
+  }
+
+#new-grid-button {
+    margin-top: 20px;
+  }
